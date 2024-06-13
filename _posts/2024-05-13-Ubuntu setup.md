@@ -112,6 +112,10 @@ sudo /etc/init.d/ssh restart
 
 그리고 익숙한 Xshell을 설치한다. 설치는 홈페이지의 안내를 따라가면 된다.  
 파일 -> 새로만들기 클릭.  
-![xshell](../images/xshell_%20new_session.png)  
-
-
+![xshell](../images/xshell_new_session.png)  
+여기서 이름으로 마음에 드는 것을 하면 된다. 
+정말 필수적인 부분은 호스트이다.  
+접속정보를 입력하고.  
+port번호를 입력한다. 보통은 22번 포트이나 port forwarding을 하는 경우 달라질 수 있으니 꼭 확인한다.  
+그리고 나서 로그인 프롬프트를 클릭하면 ubuntu에 접속할 아이디와 비밀번호를 입력하게 한다.  
+ubuntu에서 직접 만든 아이디와 비밀번호를 입력한뒤에 확인버튼 클릭.  
