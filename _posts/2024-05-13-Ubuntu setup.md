@@ -112,5 +112,6 @@ sudo /etc/init.d/ssh restart
 
 그리고 익숙한 Xshell을 설치한다. 설치는 홈페이지의 안내를 따라가면 된다.  
 파일 -> 새로만들기 클릭.  
-![xshell](https://blogfiles.pstatic.net/MjAxODEwMTdfMjk4/MDAxNTM5Nzg1OTE5NTg2.KEuLLS6fhkqDcHnOEp5UmtPV7W_sPuAs8E2tCF-Flscg.DQNT8oIh70Wwrnf7wPTZBAVnWGISW27QmCEch-8iOXog.PNG.kittytiger/ssh1.PNG)
+![xshell](../images/xshell_%20new_session.png)  
+
 
