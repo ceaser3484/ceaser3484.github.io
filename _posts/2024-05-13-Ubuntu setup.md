@@ -79,4 +79,38 @@ post-up /sbin/ethtool -s enp4s0 wol g
 post-down /sbin/ethtool -s enp4s0 wol g
 ```
 
-이렇게 하면 wake on lan이 잘 작동한다. 
+이렇게 하면 wake on lan이 잘 작동한다.  
+
+그리고 외부에서 필요할 때 마다 접근할 수 있는 xrdp와 ssh를 설치해 주어야 한다.  
+```shell
+sudo apt-get install ssh
+```  
+설치가 완료되었다면 ssh가 작동하고 있는지 확인해 보자. 다음을 입력한다.  
+```shell
+sudo /etc/init.d/ssh status
+```
+```shell
+ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2024-06-13 01:18:18 KST; 9h ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+    Process: 1192 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+   Main PID: 1237 (sshd)
+      Tasks: 1 (limit: 57526)
+     Memory: 6.0M
+        CPU: 114ms
+     CGroup: /system.slice/ssh.service
+             └─1237 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+
+```
+Activive: active 가 되어있으면 작동하는 것이다. 만일 아니라면 
+```shell
+sudo /etc/init.d/ssh restart
+```
+를 입력하여 다시 작동시킨다. 
+
+그리고 익숙한 Xshell을 설치한다. 설치는 홈페이지의 안내를 따라가면 된다.  
+파일 -> 새로만들기 클릭.  
+![xshell](https://blogfiles.pstatic.net/MjAxODEwMTdfMjk4/MDAxNTM5Nzg1OTE5NTg2.KEuLLS6fhkqDcHnOEp5UmtPV7W_sPuAs8E2tCF-Flscg.DQNT8oIh70Wwrnf7wPTZBAVnWGISW27QmCEch-8iOXog.PNG.kittytiger/ssh1.PNG)
+
